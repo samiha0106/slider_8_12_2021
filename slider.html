@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photographer Gallery</title>
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+  </head>
+  <body>
+    <div class="galleryContainer">
+      <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow">
+          <span class="arrow arrowLeft"></span>
+        </div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow">
+          <span class="arrow arrowRight"></span>
+        </div>
+        <div class="captionTextHolder">
+          <p class="captionText slideTextFromTop"></p>
+        </div>
+        <div class="imageHolder">
+          <img src="images/img_1.jpg" />
+          <p class="captionText">Lake </p>
+        </div>
+        <div class="imageHolder">
+          <img src="images/img_2.jpg" />
+          <p class="captionText">Fountain</p>
+        </div>
+        <div class="imageHolder">
+          <img src="images/img_3.jpg" />
+          <p class="captionText">Desert </p>
+        </div>
+        <div class="imageHolder">
+          <img src="images/img_4.jpg" />
+          <p class="captionText">Spring</p>
+        </div>
+      </div>
+      <div id="dotsContainer"></div>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>
